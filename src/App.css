@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f0f8ff;
+}
+.weather-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.summary, .header {
+  margin: 1rem;
+}
