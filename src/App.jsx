@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/Header';
 import WeatherList from './components/WeatherList';
 import Summary from './components/Summary';
+import DetailView from './routes/DetailView'
+import DashboardCharts from './components/DashboardCharts';
 
 const API_KEY = import.meta.env.VITE_APP_API_KEY
 
@@ -48,6 +50,7 @@ function App() {
         filter={filter}
         setFilter={setFilter}
       />
+      {weatherData && <DashboardCharts data={filtered} />}
       {weatherData && <Summary data={filtered} />}
       {weatherData && <WeatherList data={filtered} />}
     </div>
